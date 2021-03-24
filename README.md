@@ -2,30 +2,35 @@
 
 ## Abstract
 > Whether we are trading commodities, currencies, capital, collectibles, or utilities – the community is paramount to the success of any such market.
+
 The Holdex Protocol is a novel system for community incentives based on the dynamics of trust and influence across Crypto, which we consider a community-powered phenomenon. The purpose of this system is to:
+
 - provide a way to assess engagement from real users;
 - reward meaningful engagement with real value; and,
-- drive community management models for Blockchain protocols and applications towards being more user-centered. 
+- provide utility to others Blockchain applications that rely on decentralized reputation. 
 
 The basis of the system is the use of a personal blockchain-based token named `ki` which is unique to each user and represents the level of a user's influence and participation within the community. 
 
 The system is meant to address, from its design, three issues found with existing incentivized community platforms:
+
 - prevent community-level Sybil attacks i.e. fake accounts and manipulation by sockpuppetry;
 - provide token-agnostic rewards whose value is *directly* tied to positive community actions; and,
-- provide a flexible infrastructure that supports the wide scope of desirable positive community actions, from referrals to publishing to governance. 
-No other platform or protocol is designed to address all these issues simultaneously. The above-named issues (together with poor user experience) has so far seen other blockchain-based incentivized community platforms unable to gain widespread adoption, including by "Crypto teams" (i.e. protocol developers and managers) who should be a natural fit for early adopters. The result is that, in the age of nascent "web3" platforms, Crypto teams still rely heavily on a variety of "web2" platforms to carry out the bulk of their community management processes, which are increasingly more important to the success of any protocol in a saturated attention market.
+- provide a flexible infrastructure that supports decentralized reputation, from which use cases like referrals, content creation, and governance should benefit greatly. 
+
+No other platform or protocol is designed to address all these issues simultaneously. The above-named issues (together with poor user experience) have so far seen other blockchain-based incentivized community platforms unable to gain widespread adoption, including by "Crypto teams" (i.e. protocol developers and managers) who should be a natural fit for early adopters. The result is that, in the age of nascent "web3" platforms, Crypto teams still rely heavily on a variety of "web2" platforms to carry out the bulk of their community management processes, which are increasingly more important to the success of any protocol in a saturated attention market.
+
+To represent trust in the system, an endorsement action named `kudos` facilitates users exchanging their `ki`. A user that receives many `kudos` has a `ki` that is more trusted within the system. As more users give `kudos` to each other and become interconnected, personal `ki` converges in a standard to measure positive community actions which can be anchored within the system with real value, for the benefit of users and protocols alike. A third variable named `karma` reinforces these dynamics by introducing the concept of "consistency": users with good `karma` can grow their `ki` faster; conversely, users with bad `karma` see their `ki` stall.
 
 The system is also able to accept external tokens and make them compatible with its internal community incentives economy. Thus, real value can be injected into the system in a permissionless manner. The system provides integrations with DEXs in order to provide convenience to all participants so they can enter and exit the internal marketplace with the tokens of their choice.
-
-To represent trust in the system, an endorsement action named `kudos` facilitates users exchanging their `ki`. A user that receives many 'kudos' has a 'ki' that is more trusted within the system. As more users give `kudos` to each other and become interconnected, personal `ki` converges in a standard to measure positive community actions which can be anchored within the system with real value, for the benefit of users and protocols alike.
 
 ## What is the Holdex Protocol?
 
 Since the launch of Bitcoin, the Internet of Value has become an ever-possible realization within our lifetimes. 
 
-At its core, the Internet of Value presents us with an opportunity to create online spaces without middlemen, where people can freely exchange value amongst each other, eliminating third-party costs without a single-point-of-failure. This is naturally a social phenomenon, a community endeavor, as commerce always is. Whether we are trading commodities, currencies, capital, collectibles, or utilities – the community is paramount to the success of any such market.
+At its core, the Internet of Value presents us with an opportunity to create online spaces without middlemen, where people can freely exchange value amongst each other, eliminating third-party costs without a single-point-of-failure. This is naturally a social phenomenon, a community endeavor, as commerce always is. Whether we are trading commodities, currencies, capital, collectibles, or utilities – the community is paramount to the success of any such market. 
 
 _Building a community_ and _maintaining a community-oriented ethos_ in any new, growing, or mature Blockchain market _is one of the main challenges_ of any team pushing forward the success of a particular cryptoasset. There are thousands of teams working with increasingly complex stacks of tools to maintain high community engagement. To effectively conduct community-building these teams must: 
+
 - onboard new members and provide support in communication channels;
 - launch campaigns to increase awareness and support advocacy; 
 - conduct governance. 
@@ -34,7 +39,7 @@ Often, explicit incentives are implemented. But programs to correlate incentives
 
 The Holdex Protocol is Blockchain's native community incentives protocol. It is completely permissionless, so anyone can join the network without approval. It is designed to complement the existing reality of the Blockchain space, where cryptoassets can be plugged-in to anchor the value of the ecosystem rewards. Users who perform meaningful community actions are eligible to receive ecosystem rewards. The protocol is based on a social graph with a trust-building mechanism that protects against fake accounts and other attacks that would aim to malignantly seize the value in the system. In this latest regard, we have been inspired by the implementation of the Circles protocol for a *Universal Basic Income (UBI)*.
 
-The overall result is a highly-composable way of rewarding any crypto community for its continued support and engagement.
+The overall result is a highly-composable way of rewarding any crypto community member for its continued support and engagement.
 
 ## Earning incentives
 
