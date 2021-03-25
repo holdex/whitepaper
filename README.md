@@ -263,22 +263,26 @@ The holders of `HLDX` should expect to be actively involved in the success of th
 
 ### The `HLDX` token: protocol tokenomics
 
-Using continuous emissions, during the first year, we will issue 1,000,000 $HLDX and distribute it as follows:
-- 5% will be sent to the **development fund** to fund regular operations.
-- 10% will be sent to the **smart treasury** (please read this [excellent paper on smart treasuries by Placeholder VC](https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-instead)), which will operate as:
+Using continuous emissions and a *genesis distribution* lasting one year, the protocol will issue 1,000,000 $HLDX and distribute it as follows:
+
+- 5% will be sent to the **development fund** to fund regular operations. The development fund reserves the right to conduct one or several public or strategic distribution events (e.g. Liquidity Bootstrapping Pools (LBPs), Initial DEX Offerings (IDOs), strategic investment partnership) to convert this $HLDX into a fee currency or reserve currency to be used for operational liquidity.
+- 10% will be used as the genesis to the **smart treasury** (please read this [excellent paper on smart treasuries by Placeholder VC](https://www.placeholder.vc/blog/2020/9/17/stop-burning-tokens-buyback-and-make-instead)), which will operate as:
   - a *liquidity provider of last resort*
   - an *automatic buyback machine*
   - a *token issuance pool* for:
     - a *community incentives fund* to provide for special community incentives programs as determined by governance.
     - an *ecosystem fund* to invite the financing of community proposals that aim to improve the Holdex Protocol.
-- 20% will be distributed directly as **community incentives program** to celebrate the protocol's launch
-- 65% will be distributed directly to liquidity providers as a **liquidity mining program** to bootstrap the initial liquidity of the protocol. The main mechanism will be via an `ETH`–`HLDX` pool (i.e. the power pool), and although there may be other pools rewarded as part of the program, at no point will the `ETH`–`HLDX` power pool receive less than 50% of the distribution.
+- 20% will be distributed directly to contributors as as **contributor mining program**. The founding team will single out from the protocol's contributors a number to join or assist the core team by offering them vested grants of `HLDX`. All grants will be vested for one year, and the amount will lay solely at the discretion of the founding team. A portion of the contributor mining program will be set asides for the genesis `xHLDX` vault, detailed below.
+- 65% will be distributed directly as **protocol rewards** to those who will help bootstrap the protocol's network effects, as follows:
+  - 30% to liquidity providers, as a **liquidity mining program** to bootstrap the initial liquidity of the protocol. The main mechanism will be via an `ETH`–`HLDX` pool (i.e. the power pool), however governance may determine other pools to reward.
+  - 20% to incentivizers, as an **incentivizer mining program** to directly reward to those who anchor real value into the protocol by providing `ki`-swappable token rewards (i.e. creating `xERC20` vaults).
+  - 15% to referrers, as a **referral mining program** whereby a referrer gets a matching amount of $HLDX for each referral he brings that earns $HLDX within the incentive systems.
 
-The Holdex Protocol will collect protocol fees as set by governance. For example, at launch, the following fees will be set by default and come with governance controls so the community can vote to adjust them in time:
+The Holdex Protocol will collect protocol fees as set by governance. For example, at launch, the following fees will be set by default and come with governance controls that can be adjusted later on:
 - a 5% admin fee to *unwrapping* a Holdex-wrapped token in a Holdex vault.
 - a 3% admin fee to *permissioned exchange* transactions.
 - a 1% admin fee to using *convenience functions*.
-The protocol fees will be collected in `ETH` as the native currency and *sent to the smart treasury*, this creates automatic buyback pressure by default. The smart treasury is controlled by governance so any use of the treasury funds for payments or direct transfers to say, `HLDX` power pool LPs, shall be approved by governance. 
+The protocol fees will be collected in `ETH` as the native fee currency and (i) *sent to market-buy HLDX to dsitribute as revenue-sharing* and (ii) *sent to the smart treasury*. Both these mechanisms creates buyback pressure by default. The smart treasury is controlled by governance so any use of the treasury funds for payments or direct transfers to say, the development fund, shall be approved by governance. 
 
 The regular operations to be funded by the `development fund` include:
 - running costs of hosting and operating the protocol
@@ -291,37 +295,45 @@ The budget of the development fund shall be handled by the protocol's governance
 The `community incentives fund` and `ecosystem fund` are meant to issue grants, the former to finance incentives to users of the Holdex Protocol as rewards for exceptionally positive community actions, the latter to individuals and teams working for the betterment of the Holdex Protocol and its community in the following "areas of improvement":
 - integrations (e.g. with other community tools)
 - UX/UI design (e.g. for improving the experience of using the protocol)
-- tokenomics modeling (e.g. to fine-tune rewards and create an evermore robust ecosystem).
+- tokenomics modelling (e.g. to fine-tune rewards and create an evermore robust ecosystem).
 - tooling (e.g. for ease-of-development and novel use cases on the Holdex Protocol).
 - growth, governance, and community (e.g. to foster the adoption of the Holdex Protocol).
 The issuance of grants shall be handled by the protocol's governance.
 
-The distribution timetable will consist of 20 `tranches` of 50,000 $HLDX each, divided into 12 `epochs`, each corresponding to roughly 1 month, as follows:
+The *genesis distribution* timetable will consist of 20 `tranches` of 50,000 $HLDX each, divided into 12 `epochs`, each corresponding to roughly 1 month, as follows:
 - in every `epoch`, a minimum of 1 `tranche` will be distributed – for a subtotal of 12 `tranches`
-- an additional 'tranche' will be distributed on the 6th, 9th, and 12th `epoch` – for a subtotal of 3 `tranches`
+- an additional `tranche` will be distributed on the 6th, 9th, and 12th `epoch` – for a subtotal of 3 `tranches`
 - during the first 3 `epochs` (the launch period) additional `tranches` will be distributed – for a subtotal of 5 `tranches`
   - an additional 2 `tranches` will be distributed on the 1st `epoch`
   - an additional 2 `tranches` will be distributed on the 2nd `epoch`
   - an additional `tranche` will be distributed on the 3rd `epoch`
   
-After the first year, we will target an annual increase of 7% in the supply of $HLDX in perpetuity, so as to reward active participants in the protocol over passive holders. The governance of the Holdex Protocol will decide the manner in which to continue the distribution. 
+After the first year, we will target an annual increase of 7% in the supply of `HLDX` in perpetuity, so as to reward active participants in the protocol over passive holders. The governance of the Holdex Protocol will decide the manner in which to continue the distribution. 
 
-During the first year, to steer the Holdex Protocol from launch towards a mature *decentralized autonomous organization (DAO)*, a *multisig* "board of directors" will retain effective control over the protocol and its funds, starting with the core development team and adding community members throughout the course of the year, as follows.
-- For the first 6 `epochs`, a 2/3 multisig wallet with all members coming from the development team
-- At the end of the 6th `epoch`, the 2/3 multisig will be replaced with a 3/5 multisig after the election of 2 community members to join the original 3 members.
-- At the end of the 9th `epoch`, a 3/5 multisig will be replaced with a 5/9 multisig after the election of 6 new community members to join the original 3 members. 
-- At the end of the 12th `epoch`, the 5/9 multisig will remain but all 9 members will be elected from the community, for 3 `epochs`.
-- every 3 `epochs`, the community will elect a new slate of multisig "directors".
+During the first year, to steer the Holdex Protocol from launch towards a mature *decentralized autonomous organization (DAO)*, a *multisig* "board of directors" will retain effective control over the protocol and its funds, starting with the founding team and adding community members throughout the course of the year, as follows.
+- For the first 6 `epochs`, a 2/3 multisig wallet with all members coming from the founding team.
+- At the end of the 6th `epoch`, the 2/3 multisig will be upgraded to a 3/5 multisig after the election of 2 community members to join the original 3 founding members.
+- At the end of the 9th `epoch`, a 3/5 multisig will be upgraded to a 5/9 multisig after the election of 6 new community members to join the original 3 founding members. 
+- At the end of the 12th `epoch`, the 5/9 multisig will remain, consituted as follows:
+  - From the core team, 3 members will take an *ex officio* role on the multisig: the *Chief Executive Officer (CEO)*, the *Chief Operating Officer (COO)*, and the *Chief Technology Officer (CTO)*.
+  - From the community, 6 elected members will join the ex-officio members.
+  - From this point onwards, every member of the founding team will serve at the pleasure of the multisig. The multisig will determine the composition of the "core team" and oversee all hiring activity.
+- After the 12th `epoch`, every 12 `epochs`, the community will elect a new slate of multisig "directors". The community may trigger a snap election via a proposal backed by at least 10% of $HLDX holders, if 40% vote to hold such snap election. If a snap election is held, the multisig therein elected will serve for the remainder of the replaced multisig's term, until the next regularly scheduled election (i.e. every 12 `epochs`).
 
-To directly participate in governance, `HLDX` holders must provide liquidity in the power pool (i.e. the official `ETH`–`HLDX` pool) and vote-lock their LP tokens on a *voting escrow* contract. In other words, a vote-locking system will be implemented, where power pool LPs can boost their liquidity mining rewards and receive a corresponding amount of `veHLDX` (*voting escrow HLDX*) by time-locking their LP tokens on the voting escrow contract. The more `HLDX` is locked, and the longer it is locked, the more `veHLDX` (i.e. *voting power*) will be received and the higher the boost to liquidity mining rewards.
+Elections shall be the primary mechanism to change the composition of the multisig, which controls all admin permissions in the protocol as well as all its funds.
 
-The base of voting power will be determined by taking the square root of `veHLDX`, a system known as *quadratic voting*. This means the Holdex Protocol will be less biased towards big holders.
+To directly participate in governance, `HLDX` holders vote-lock their governance tokens on a *voting escrow* contract. In other words, a vote-locking system will be implemented, where `HLDX` holders will receive a deterministic amount of `veHLDX` (*voting escrow HLDX*) by time-locking their tokens on the voting escrow contract. The more `HLDX` is locked, and the longer it is locked, the more `veHLDX` will be received. `HLDX` locked for 4 years will receive maximum `veHLDX`, which will be non-tradeable. A holders balance of `veHLDX` is subject to linear decay, whoever the lock can be extended at any time.
+
+Holders of `veHLDX` will receive three (3) utilities from the protocol:
+- *voting power*: one `veHLDX` will equal 1 vote. 
+- *boosted protocol rewards*: up to 2.5x boost in rewards from liquidity mining, incentivizer mining, and referral mining can be enjoyed by those who maintain a sufficiently high balance of `veHLDX`.
+- *revenue-sharing*: 50% of protocol fees will be used to market-buy `HLDX` to distribute pro-rate to the `veHLDX` supply. 
 
 ### Tying `ki` and `HLDX`
 
 As previous described, `ki` is a personal token earned by each user when performing positive community actions. Furthermore, real value can be anchored into the system by any incentivizer (e.g. a protocol development team, say Maker). 
 
-To launch the protocol, 200,000 $HLDX are set aside from the first-year emissions for a **community incentives program**. This means, the same dynamic to anchor value by incentivizers will be used to inject 200,000 $HLDX into the internal economy of `ki`, with the Holdex Protocol itself as the incentivizer.
+As part of the genesis distribution, 50,000 $HLDX from the contributor mining program will be set aside for a **genesis $xHLDX vault**. This means the same value-anchoring dynamic available to incentivizers will be used to inject 200,000 $HLDX into the internal economy of `ki`, with the Holdex Protocol itself as the incentivizer.
 
 We expect the following community actions to be encouraged with these `HLDX` incentives (a detailed list will be available in due time):
 - promotion of the Holdex Protocol to incentivizers.
@@ -330,13 +342,13 @@ We expect the following community actions to be encouraged with these `HLDX` inc
 - becoming a *superconnector* that facilitates *permissioned exchange* within the ecosystem.
 - actively participating in the governance of the protocol.
 
-To this *initial* 200,000 $HLDX, a *ongoing* incentives will be added, in the forms of grants from the smart treasury, as well as apportionements from the *targeted inflation* in later years. Therefore, from its very beginning, `ki` will be anchored by value with `HLDX` as the first use case of the anchoring mechanism.
+To this *initial* 50,000 $HLDX, *ongoing* incentives will be added, in the forms of grants from the smart treasury, as well as apportionements from the *targeted inflation* in later years. Therefore, from its very beginning, `ki` will be anchored by value with `HLDX` as the first use case of the value-anchoring mechanism.
 
 --- 
 
 **Conclusion**
 
-The Holdex Protocol is the future of Crypto community incentives, for a variety of reasons:
+The Holdex Protocol is the future of Crypto community incentives and community-centered decentralized reputation, for a variety of reasons:
 - Due to in-build *Sybil resistance*, it is capable of encouraging real community actions and measure them free of mass manipulation and fake accounts
-- Through the *value anchoring* mechanism, incentives that truly engage the community are possible. The same incentives that would be near-wasted on an airdrop or another mass distribution of valuable tokens can be implemented on Holdex, get the same or more true reach (once you take all the fakes out), plus uniquely reward community members who get involved early.
+- Through the *value-anchoring* mechanism, incentives that truly engage the community are possible. The same incentives that would be near-wasted on an airdrop or another mass distribution of valuable tokens can be implemented on Holdex, achieving higher true reach (by removing all the fake accounts from the distribution), plus uniquely reward community members who get involved early.
 - With the *permissioned exchange fee* mechanism, highly-active users like promoters and other *superconnectors* across the Crypto community can monetize their influence and access.
