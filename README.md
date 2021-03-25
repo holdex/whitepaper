@@ -43,7 +43,7 @@ The overall result is a highly-composable way of rewarding any crypto community 
 
 ## Earning incentives
 
-The incentive system is made up of the interactions between individual users in the system. Individual users band together to form communities within the system. A community action is an action that has an effect on other members of the community. Whenever a beneficial community action is performed within the ecosystem, a user is said to earn `ki`. Each user's `ki` is a *personal asset*, which operates under a defined set of rules. Whenever a new user enters the ecosystem, a `ki` personal to himself is created. As a user performs community actions, new units of `ki` (i.e. points) are minted and awarded to that person.
+The incentive system is made up of the interactions between individual users in the system. Individual users band together to form communities within the system. A community action is an action that has an effect on other members of the community. Whenever a beneficial community action is performed within the ecosystem, a user is said to earn `ki`. Each user's `ki` is a *personal asset*, which operates under a defined set of rules. Whenever a new user enters the ecosystem, a `ki` personal to himself is created. As a user performs community actions, new units of `ki` (i.e. tokenized "points") are minted and awarded to that person.
 
 ```
 Joshua joins the ecosystem, creating 'JoshuaKi'
@@ -68,7 +68,11 @@ Joshua now has 5 'JoshuaKi' while Artur now has 5 'JoshuaKi' and 5 'ArturKi'
 
 The number of `ki` in the ecosystem is based on the number of community actions done by users and the value of each action. No `ki` is minted outside of providing positive community actions. There is no cap to the supply of `ki`. The "inflation" in the system happens as more users join and as users become more active. The only way to get "diluted" is to remain inactive for long. This is meant to reward activity in the system.
 
-All users start their journey with no `ki` and `ki` cannot be bought from a reserve or a pre-mined source, it can only be earned within the system by performing positive community actions. 
+In order to turbocharge these natural dynamics of "inflation" and "dilution", a `karma` parameter is attached to each user. Positive `karma` can provide a multiplier to each "ki point" earned so that the velocity of earning `ki` increases, whereas negative `karma` will act as a divider to each "ki point" earned so that the velocity of earning `ki` decreases. At any given time, a user will have a single `karma` value. This `karma` will be either positive, negative, or neutral. 
+
+Both positive and negative `karma` come in a degree. The karma scale thus runs from -10 to +10, passing by 0. All `karma` under zero is negative, and all `karma` above zero is positive, with 0 `karma` being the neutral state. Using the Fibonacci sequence, we obtain both the multiplier or divider for `karma`, so that a `karma` of 10 equals a multiplier of 55x, while a `karma` of -10 equals a dividing factor of 1/55x.
+
+All users start their journey with no `ki` and `ki` cannot be bought from a reserve or a pre-mined source, it can only be earned within the system by performing positive community actions. Likewise, users start with neutral `karma`, which can only change through the frequency of one's community actions. Users who perform positive actions with high frequency will enjoy a higher `karma`. 
 
 These are examples of actions that earn `ki`. The exact actions are set by protocol governance:
 - receiving a `pump` or upvote on a post or comment.
@@ -270,8 +274,8 @@ Using continuous emissions and a *genesis distribution* lasting one year, the pr
   - a *liquidity provider of last resort*
   - an *automatic buyback machine*
   - a *token issuance pool* for:
-    - a *community incentives fund* to provide for special community incentives programs as determined by governance.
-    - an *ecosystem fund* to invite the financing of community proposals that aim to improve the Holdex Protocol.
+    - a `community incentives fund` to provide for special community incentives programs as determined by governance.
+    - an `ecosystem fund` to invite the financing of community proposals that aim to improve the Holdex Protocol.
 - 20% will be distributed directly to contributors as as **contributor mining program**. The founding team will single out from the protocol's contributors a number to join or assist the core team by offering them vested grants of `HLDX`. All grants will be vested for one year, and the amount will lay solely at the discretion of the founding team. A portion of the contributor mining program will be set asides for the genesis `xHLDX` vault, detailed below.
 - 65% will be distributed directly as **protocol rewards** to those who will help bootstrap the protocol's network effects, as follows:
   - 30% to liquidity providers, as a **liquidity mining program** to bootstrap the initial liquidity of the protocol. The main mechanism will be via an `ETH`–`HLDX` pool (i.e. the power pool), however governance may determine other pools to reward.
@@ -279,9 +283,9 @@ Using continuous emissions and a *genesis distribution* lasting one year, the pr
   - 15% to referrers, as a **referral mining program** whereby a referrer gets a matching amount of $HLDX for each referral he brings that earns $HLDX within the incentive systems.
 
 The Holdex Protocol will collect protocol fees as set by governance. For example, at launch, the following fees will be set by default and come with governance controls that can be adjusted later on:
-- a 5% admin fee to *unwrapping* a Holdex-wrapped token in a Holdex vault.
-- a 3% admin fee to *permissioned exchange* transactions.
-- a 1% admin fee to using *convenience functions*.
+- a 5% admin fee for *unwrapping* a Holdex-wrapped token in a Holdex vault.
+- a 3% admin fee for *permissioned exchange* transactions.
+- a 1% admin fee for using *convenience functions*.
 The protocol fees will be collected in `ETH` as the native fee currency and (i) *sent to market-buy HLDX to dsitribute as revenue-sharing* and (ii) *sent to the smart treasury*. Both these mechanisms creates buyback pressure by default. The smart treasury is controlled by governance so any use of the treasury funds for payments or direct transfers to say, the development fund, shall be approved by governance. 
 
 The regular operations to be funded by the `development fund` include:
@@ -298,7 +302,7 @@ The `community incentives fund` and `ecosystem fund` are meant to issue grants, 
 - tokenomics modelling (e.g. to fine-tune rewards and create an evermore robust ecosystem).
 - tooling (e.g. for ease-of-development and novel use cases on the Holdex Protocol).
 - growth, governance, and community (e.g. to foster the adoption of the Holdex Protocol).
-The issuance of grants shall be handled by the protocol's governance.
+The issuance of grants shall be handled by the protocol's governance. The earmarking of funds from the smart treasury to either of the funds shall also be under the purview of the protocol's governance.
 
 The *genesis distribution* timetable will consist of 20 `tranches` of 50,000 $HLDX each, divided into 12 `epochs`, each corresponding to roughly 1 month, as follows:
 - in every `epoch`, a minimum of 1 `tranche` will be distributed – for a subtotal of 12 `tranches`
