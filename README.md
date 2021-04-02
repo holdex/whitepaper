@@ -7,7 +7,7 @@ The Holdex Protocol is a novel system for community incentives based on the dyna
 
 - provide a way to assess engagement from real users;
 - reward meaningful engagement with real value; and,
-- provide utility to others Blockchain applications that rely on decentralized reputation. 
+- provide utility to other Blockchain applications that rely on decentralized reputation. 
 
 The basis of the system is the use of a personal blockchain-based token named `ki` which is unique to each user and represents the level of a user's influence and participation within the community. 
 
@@ -21,13 +21,13 @@ No other platform or protocol is designed to address all these issues simultaneo
 
 To represent trust in the system, an endorsement action named `kudos` facilitates users exchanging their `ki`. A user that receives many `kudos` has a `ki` that is more trusted within the system. As more users give `kudos` to each other and become interconnected, personal `ki` converges in a standard to measure positive community actions which can be anchored within the system with real value, for the benefit of users and protocols alike. A third variable named `karma` reinforces these dynamics by introducing the concept of "consistency": users with good `karma` can grow their `ki` faster; conversely, users with bad `karma` see their `ki` stall.
 
-The system is also able to accept external tokens and make them compatible with its internal community incentives economy. Thus, real value can be injected into the system in a permissionless manner. The system provides integrations with DEXs in order to provide convenience to all participants so they can enter and exit the internal marketplace with the tokens of their choice.
+The system also accepts external tokens and makes them compatible with its internal community incentives economy. Thus, real value can be injected into the system in a permissionless manner. The system is integrated with DEXs in order to provide convenience to all participants so they can enter and exit the internal marketplace with the tokens of their choice.
 
 ## What is the Holdex Protocol?
 
 Since the launch of Bitcoin, the Internet of Value has become an ever-possible realization within our lifetimes. 
 
-At its core, the Internet of Value presents us with an opportunity to create online spaces without middlemen, where people can freely exchange value amongst each other, eliminating third-party costs without a single-point-of-failure. This is naturally a social phenomenon, a community endeavor, as commerce always is. Whether we are trading commodities, currencies, capital, collectibles, or utilities – the community is paramount to the success of any such market. 
+At its core, the Internet of Value presents us with an opportunity to create online spaces without middlemen, where people can freely exchange value amongst each other, eliminating third-party costs without a single-point-of-failure. This is naturally a social phenomenon, a community endeavour, as commerce always is. Whether we are trading commodities, currencies, capital, collectibles, or utilities – the community is paramount to the success of any such market.
 
 _Building a community_ and _maintaining a community-oriented ethos_ in any new, growing, or mature Blockchain market _is one of the main challenges_ of any team pushing forward the success of a particular cryptoasset. There are thousands of teams working with increasingly complex stacks of tools to maintain high community engagement. To effectively conduct community-building these teams must: 
 
@@ -39,7 +39,7 @@ Often, explicit incentives are implemented. But programs to correlate incentives
 
 The Holdex Protocol is Blockchain's native community incentives protocol. It is completely permissionless, so anyone can join the network without approval. It is designed to complement the existing reality of the Blockchain space, where cryptoassets can be plugged-in to anchor the value of the ecosystem rewards. Users who perform meaningful community actions are eligible to receive ecosystem rewards. The protocol is based on a social graph with a trust-building mechanism that protects against fake accounts and other attacks that would aim to malignantly seize the value in the system. In this latest regard, we have been inspired by the implementation of the Circles protocol for a *Universal Basic Income (UBI)*.
 
-The overall result is a highly-composable way of rewarding any crypto community member for its continued support and engagement.
+The overall result is a highly composable way of rewarding any crypto community or single community member for its continued support and engagement.
 
 ## Earning incentives
 
@@ -70,7 +70,7 @@ The number of `ki` in the ecosystem is based on the number of community actions 
 
 In order to turbocharge these natural dynamics of "inflation" and "dilution", a `karma` parameter is attached to each user. Positive `karma` can provide a multiplier to each "ki point" earned so that the velocity of earning `ki` increases, whereas negative `karma` will act as a divider to each "ki point" earned so that the velocity of earning `ki` decreases. At any given time, a user will have a single `karma` value. This `karma` will be either positive, negative, or neutral. 
 
-Both positive and negative `karma` come in a degree. The karma scale thus runs from -10 to +10, passing by 0. All `karma` under zero is negative, and all `karma` above zero is positive, with 0 `karma` being the neutral state. Using the Fibonacci sequence, we obtain both the multiplier or divider for `karma`, so that a `karma` of 10 equals a multiplier of 55x, while a `karma` of -10 equals a dividing factor of 1/55x.
+Both positive and negative `karma` come in a degree. The karma scale thus runs from -10 to +10, passing by 0. All `karma` under zero is negative, and all `karma` above zero is positive, with 0 `karma` being the neutral state. Using the Fibonacci sequence, we obtain both the multiplier or divider for `karma`, so that a `karma` of 10 equals a multiplier of 55, while a `karma` of -10 equals a dividing factor of 1/55.
 
 All users start their journey with no `ki` and `ki` cannot be bought from a reserve or a pre-mined source, it can only be earned within the system by performing positive community actions. Likewise, users start with neutral `karma`, which can only change through the frequency of one's community actions. Users who perform positive actions with high frequency will enjoy a higher `karma`. 
 
@@ -286,7 +286,7 @@ The Holdex Protocol will collect protocol fees as set by governance. For example
 - a 5% admin fee for *unwrapping* a Holdex-wrapped token in a Holdex vault.
 - a 3% admin fee for *permissioned exchange* transactions.
 - a 1% admin fee for using *convenience functions*.
-The protocol fees will be collected in `ETH` as the native fee currency and (i) *sent to market-buy HLDX to dsitribute as revenue-sharing* and (ii) *sent to the smart treasury*. Both these mechanisms creates buyback pressure by default. The smart treasury is controlled by governance so any use of the treasury funds for payments or direct transfers to say, the development fund, shall be approved by governance. 
+The protocol fees will be collected in `ETH` as the native fee currency and (i) *sent to market-buy HLDX to distribute as revenue-sharing* and (ii) *sent to the smart treasury*. Both these mechanisms create buyback pressure by default. The smart treasury is controlled by governance so any use of the treasury funds for payments or direct transfers to say, the development fund, shall be approved by governance. 
 
 The regular operations to be funded by the `development fund` include:
 - running costs of hosting and operating the protocol
@@ -326,7 +326,7 @@ During the first year, to steer the Holdex Protocol from launch towards a mature
 
 Elections shall be the primary mechanism to change the composition of the multisig, which controls all admin permissions in the protocol as well as all its funds.
 
-To directly participate in governance, `HLDX` holders vote-lock their governance tokens on a *voting escrow* contract. In other words, a vote-locking system will be implemented, where `HLDX` holders will receive a deterministic amount of `veHLDX` (*voting escrow HLDX*) by time-locking their tokens on the voting escrow contract. The more `HLDX` is locked, and the longer it is locked, the more `veHLDX` will be received. `HLDX` locked for 4 years will receive maximum `veHLDX`, which will be non-tradeable. A holders balance of `veHLDX` is subject to linear decay, whoever the lock can be extended at any time.
+To directly participate in governance, `HLDX` holders vote-lock their governance tokens on a *voting escrow* contract. In other words, a vote-locking system will be implemented, where `HLDX` holders will receive a deterministic amount of `veHLDX` (*voting escrow HLDX*) by time-locking their tokens on the voting escrow contract. The more `HLDX` is locked, and the longer it is locked, the more `veHLDX` will be received. `HLDX` locked for 4 years will receive maximum `veHLDX`, which will be non-tradeable. A holder's balance of `veHLDX` is subject to linear decay, however, the lock can be extended at any time.
 
 Holders of `veHLDX` will receive three (3) utilities from the protocol:
 - *voting power*: one `veHLDX` will equal 1 vote. 
