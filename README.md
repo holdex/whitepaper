@@ -86,12 +86,12 @@ In order to create a useful rewards ecosystem, users endorse each other. This en
 ```
 Artur gives a 'kudos' to Charlie, so Artur trusts 'CharlieKi'
 Artur has 10 'JoshuaKi'
-Renée has 10 CharlieKi
-Renée gives 5 CharlieKi to Artur and takes 5 JoshuaKi from him
-Renée now has 5 CharlieKi and 5 JoshuaKi while Artur now has 5 JoshuaKi
+Renée has 10 'CharlieKi'
+Renée gives 5 'CharlieKi' to Artur and takes 5 'JoshuaKi' from him
+Renée now has 5 'CharlieKi' and 5 'JoshuaKi' while Artur now has 5 'JoshuaKi'
 ```
 
-Giving `kudos` prevents a trivial attack, however one that happens every day in other community platforms. Since any Blockchain wallet can join the system and start minting `ki`, someone can create multiple wallets and perform the same action multiple times to earn themselves a multiplier on `ki` rewards. This devalues the system. Protecting against such attacks is technically called *Sybil resistance*, and the `kudos` mechanism provides that resistance for Holdex.  
+Giving `kudos` prevents a trivial attack, however one that happens every day in other community platforms. Since any Blockchain wallet can join the system and start minting `ki`, someone can create multiple wallets and perform the same action multiple times to earn themselves a multiplier on `ki` rewards. This devalues the system. Protecting against such attacks is technically called *Sybil resistance*, and the `kudos` mechanism provides that resistance on the Holdex Protocol.  
 
 ### Transitive exchange
 
@@ -126,7 +126,7 @@ Renée gives 5 'JoshuaKi' to Artur
 
 !['extended transitive exchange' diagram](https://storage.googleapis.com/holdex-public/thread/Holdex%20Protocol%20Lightpaper/extended-transitive-exchange-diagram.png)
 
-Of course, we do not expect these chains of trust to get very long as the system grows. We are informed by the idea of "six degrees of separation" popularized in John Guare's play, by the 'small-world' experiment of Stanley Milgram in the 60s, and more recently by Duncan J. Watts Steven Strogatz at Cornell. Since the Holdex ecosystem finds the shortest route in a chain, a trustworthy individual may need no more than six "hops" in the chain to reach everyone else in the network.
+Of course, we do not expect these chains of trust to get very long as the system grows. We are informed by the idea of "six degrees of separation" popularized in John Guare's play, by the 'small-world' experiment of Stanley Milgram in the 60s, and more recently by Duncan J. Watts and Steven Strogatz at Cornell. Since the Holdex ecosystem finds the shortest route in a chain, a trustworthy individual may need no more than six "hops" in the chain to reach everyone else in the network.
 
 ### Limits to trust
 
@@ -144,7 +144,7 @@ Joshua can now only give 'ki' to Artur
 
 !['limits to trust' diagram](https://storage.googleapis.com/holdex-public/thread/Holdex%20Protocol%20Lightpaper/limits-to-trust.png)
 
-The superconnected user may indeed have real trust in the new user (possibly know him personally even) and want to give him a headstart with a timely `kudos`, but doing so will potentially result in the superconnected user being locked out of his chain of trust. In order to encourage this type of interaction, the Holdex system allows for *qualifying* a `kudos` by setting a limit to how much of the endorser's wallet can be taken by the recipient's `ki`. The limit can be *relative* (a percentage or share-of-wallet), absolute (a maximum amount), or time-based (e.g. a maximum per month).
+The superconnected user may indeed have real trust in the new user (possibly know him personally even) and want to give him a headstart with a timely `kudos`, but doing so will potentially result in the superconnected user being locked out of his chain of trust. In order to encourage this type of interaction, the Holdex Protocol allows for *qualifying* a `kudos` by setting a limit to how much of the endorser's wallet can be taken by the recipient's `ki`. The limit can be *relative* (a percentage or share-of-wallet), absolute (a maximum amount), or time-based (e.g. a maximum per month).
 
 ```
 25 people trust 'JoshuaKi'
@@ -163,7 +163,7 @@ Qualifying a `kudos` with a limit makes it easier for new users to the system to
 
 ### Defending against fakes
 
-As mentioned before, one of the main considerations in designing the Holdex ecosystem is to protect against fake accounts. Let us see what happens when a fake account gets access or is connected to someone in your trusted network.
+As mentioned before, one of the main considerations in designing the Holdex Protocol is to protect against fake accounts. Let us see what happens when a fake account gets access or is connected to someone in your trusted network.
 
 ```
 Artur gives a 'kudos' to Joshua, so Artur trusts 'JoshuaKi'
@@ -177,11 +177,11 @@ FakeJoshua gives 10 'JoshuaKi' to Artur
 
 !['fake accounts' diagram](https://storage.googleapis.com/holdex-public/thread/Holdex%20Protocol%20Lightpaper/fake-accounts.png)
 
-Essentially, just like Artur in our example, a user only ever receives `ki` he trusts. Conversely, a user like Joshua can only transfer `ki` that other users trust. The `kudos` mechanism guarantees that, even if a malicious user were to create, say, 100 fake accounts, and give `kudos` to all of them, they would still only be able to transfer their own `ki` (e.g. Joshua would only be able to transfer `JoshuaKi`), since that would be the only `ki` other users have trusted. This is why giving `kudos` is (and should be) a big deal in the Holdex ecosystem.
+Essentially, just like Artur in our example, a user only ever receives `ki` he trusts. Conversely, a user like Joshua can only transfer `ki` that other users trust. The `kudos` mechanism guarantees that, even if a malicious user were to create, say, 100 fake accounts, and give `kudos` to all of them, they would still only be able to transfer their own `ki` (e.g. Joshua would only be able to transfer `JoshuaKi`), since that would be the only `ki` other users have trusted. This is why giving `kudos` is (and should be) a big deal in the Holdex Protocol.
 
 ### Anchoring real value 
 
-In order to provide a way to encourage users in the ecosystem to perform valuable community actions, we allow for a mechanism that allows incentivizers to "anchor" an external incentive (in the form of an ERC-20 token) to the `ki` mechanism.  We call this mechanism *value anchoring*. A user who wants to be an incentivizer provides an incentive and sets a conversion factor between that incentive and `ki`. The system will retain custody of the incentive and create a 'wrapped version' of the incentive for internal exchange. In combination with the `kudos` mechanism, value anchoring can be used to encourage "gatekeeping", or the protection of trust within the community, thus increasing the value on those chains of trust that the incentivizer belongs to.
+In order to provide a way to encourage users in the ecosystem to perform valuable community actions, we allow for a mechanism that allows incentivizers to "anchor" an external incentive (in the form of an ERC-20 token) to the `ki` mechanism.  We call this mechanism *value anchoring*. A user who wants to be an incentivizer provides an incentive and sets a conversion factor between that incentive and `ki`. The Holdex Protocol will retain custody of the incentive and create a 'wrapped version' of the incentive for internal exchange. In combination with the `kudos` mechanism, value anchoring can be used to encourage "gatekeeping", or the protection of trust within the community, thus increasing the value on those chains of trust that the incentivizer belongs to.
 
 ```
 Rune works for Maker and wants to be an incentivizer
@@ -209,7 +209,7 @@ In order to further facilitate the participation of users and Crypto teams alike
 
 ### Promoting promoters
 
-As we have seen throughout, the `kudos` mechanism, essentially an endorsement or "vouching" mechanism between users, is the only way to give and gain trust in the Holdex ecosystem. The ability to give, receive, and qualify this trust, as formalized in the `kudos` mechanism, is also the feature that allows for combating fake accounts in the Holdex ecosystem. However, in order to facilitate and encourage users to build trust and interact in the absence of direct trust in certain situations, Holdex provides a variety of trust-building features, as well as user controls for a *permissioned exchange fee*.
+As we have seen throughout, the `kudos` mechanism, essentially an endorsement or "vouching" mechanism between users, is the only way to give and gain trust in the Holdex ecosystem. The ability to give, receive, and qualify this trust, as formalized in the `kudos` mechanism, is also the feature that allows for combating fake accounts in the Holdex ecosystem. However, in order to facilitate and encourage users to build trust and interact in the absence of direct trust in certain situations, the Holdex Protocol provides a variety of trust-building features, as well as user controls for a *permissioned exchange fee*.
 
 ```
 Manny is well-known, 100+ people trust 'MannyKi'
